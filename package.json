@@ -1,0 +1,11 @@
+{
+  "name": "sidebar",
+  "version": "1.0.0",
+  "description": "sidebar",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "author": "Agustin Jose Perez Rodriguez",
+  "license": "ISC"
+}

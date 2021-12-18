@@ -1,0 +1,112 @@
+.container-encabezado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(165, 165, 165);
+    box-shadow: 0px 2px 5px black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .cont-img {
+        width: 100%;
+        flex: 1 1 5px;
+    }
+
+    .cont-title {
+        width: 75%;
+        .titulo_navegacion{
+            width: 100%;
+            display: block;
+            margin: auto;
+            text-decoration: none;
+            text-align:center;
+            font-size: 2rem;
+            color: black;
+            background-color: lightblue;
+            flex: 1 1 5px;
+        }
+    }
+}
+
+    /* ESTILO PARA ICONO MENU*/
+#icono-menu {
+    margin-left: 40px ;
+    position: relative;
+    z-index: 1;
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer;
+    
+}
+
+
+    /* ESTILO PARA CONTENEDOR DE MENU*/
+#cont-menu {
+    background-color: rgb(42, 42, 42);
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: all .5s ease;
+    .nav__ul {
+
+        position: relative;
+        padding: 100px 0px 20px 0px ;
+        list-style: none;
+            .nav__a {
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 1.5rem;
+                &:hover{
+                    color: rgb(42, 42, 42);
+                }
+                .nav__li {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px 50px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: rgb(94, 168, 187);
+                        color: rgb(42, 42, 42);
+                    }
+            }
+        }
+        
+    }
+}
+    /*ESTILO PARA JAVASCRIPT*/
+#cont-menu.active {
+    left: 0;
+}
+
+@media (min-width: 1024px) {
+    .container-encabezado {
+        background-color: rgb(175, 74, 74);
+        box-shadow: 0px 2px 5px black;
+        
+        .cont-title {
+            .titulo_navegacion{
+                font-size: 3rem;
+                color: black;
+                background-color: red;
+            }    
+        }
+    }
+
+    #icono-menu {
+        margin-left:0 ;
+        width: 40px;
+        cursor: pointer;
+        background-color: blue;
+        
+    }
+}
+
+
+
